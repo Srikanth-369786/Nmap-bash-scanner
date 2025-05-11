@@ -1,0 +1,40 @@
+Running Ping Scan...
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-05-11 09:12 +0530
+Nmap scan report for example.com (23.215.0.138)
+Host is up (0.042s latency).
+Other addresses for example.com (not scanned): 2600:1406:3a00:21::173e:2e66 2600:1406:bc00:53::b81e:94c8 2600:1406:bc00:53::b81e:94ce 2600:1408:ec00:36::1736:7f24 2600:1408:ec00:36::1736:7f31 2600:1406:3a00:21::173e:2e65 96.7.128.175 96.7.128.198 23.192.228.80 23.192.228.84 23.215.0.136
+rDNS record for 23.215.0.138: a23-215-0-138.deploy.static.akamaitechnologies.com
+Nmap done: 1 IP address (1 host up) scanned in 0.82 seconds
+
+Running Scan (Top 1000 Ports)...
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-05-11 09:12 +0530
+Nmap scan report for example.com (23.215.0.136)
+Host is up (0.038s latency).
+Other addresses for example.com (not scanned): 2600:1406:3a00:21::173e:2e65 2600:1408:ec00:36::1736:7f31 2600:1408:ec00:36::1736:7f24 2600:1406:bc00:53::b81e:94ce 2600:1406:bc00:53::b81e:94c8 2600:1406:3a00:21::173e:2e66 23.192.228.84 23.192.228.80 96.7.128.198 96.7.128.175 23.215.0.138
+rDNS record for 23.215.0.136: a23-215-0-136.deploy.static.akamaitechnologies.com
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     AkamaiGHost (Akamai's HTTP Acceleration/Mirror service)
+|_http-title: Example Domain
+443/tcp open  ssl/http AkamaiGHost (Akamai's HTTP Acceleration/Mirror service)
+| ssl-cert: Subject: commonName=a248.e.akamai.net/organizationName=Akamai Technologies, Inc./stateOrProvinceName=Massachusetts/countryName=US
+| Subject Alternative Name: DNS:a248.e.akamai.net, DNS:*.akamaized.net, DNS:*.akamaized-staging.net, DNS:*.akamaihd.net, DNS:*.akamaihd-staging.net
+| Not valid before: 2025-03-18T00:00:00
+|_Not valid after:  2026-03-18T23:59:59
+|_ssl-date: TLS randomness does not represent time
+|_http-title: Example Domain
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+No OS matches for host
+Network Distance: 5 hops
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+1   3.19 ms  192.168.138.225
+2   29.70 ms 255.0.0.0
+3   31.63 ms 255.0.0.2
+4   22.36 ms 255.0.0.3
+5   30.95 ms a23-215-0-136.deploy.static.akamaitechnologies.com (23.215.0.136)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 89.93 seconds
